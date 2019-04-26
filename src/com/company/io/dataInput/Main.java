@@ -1,4 +1,4 @@
-package com.company.dataInput;
+package com.company.io.dataInput;
 
 import java.io.*;
 

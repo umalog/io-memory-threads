@@ -1,4 +1,4 @@
-package com.company.serialization.entity;
+package com.company.io.serialization.entity;
 
 import java.io.Serializable;
 import java.util.ArrayList;

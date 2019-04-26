@@ -1,4 +1,4 @@
-package com.company.objectInput;
+package com.company.io.objectInput;
 
 import java.io.Serializable;
 

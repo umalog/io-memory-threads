@@ -1,4 +1,4 @@
-package com.company.dataInput;
+package com.company.io.dataInput;
 
 public class Person {
     private String name;

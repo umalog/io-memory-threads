@@ -1,4 +1,4 @@
-package com.company.byteArray;
+package com.company.io.byteArray;
 
 import java.io.ByteArrayInputStream;
 

@@ -1,9 +1,9 @@
-package com.company.serialization;
+package com.company.io.serialization;
 
 
-import com.company.serialization.entity.Line;
-import com.company.serialization.entity.Person;
-import com.company.serialization.entity.Point;
+import com.company.io.serialization.entity.Line;
+import com.company.io.serialization.entity.Person;
+import com.company.io.serialization.entity.Point;
 
 import java.io.*;
 

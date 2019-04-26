@@ -1,4 +1,4 @@
-package com.company.serialization;
+package com.company.io.serialization;
 
 import java.io.*;
 
