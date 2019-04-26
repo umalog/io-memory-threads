@@ -6,14 +6,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         readFile("note.txt");
         String text = "File not found";
         writeFile("note.txt", text);
         readFile("note.txt");
+        /* если нет нужды в обработке данных в процессе чтения, используйте Files.copy() */
+//        Files.copy(Paths.get("note.txt"), Paths.get("newNote"));
     }
 
-    ;
 
     public static void readFile(String filename) {
         try (FileInputStream fileInputStream = new FileInputStream(filename)) {

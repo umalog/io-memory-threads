@@ -6,7 +6,7 @@ public class StreamDemo {
 
     public static void main(String[] args) throws IOException {
         testByteStreams();
-//        testFileStreams();
+        testFileStreams();
         testFileStreamsWithAutoClose();
     }
 
@@ -35,6 +35,7 @@ public class StreamDemo {
             throw new IOException("Я так захотел");
         } catch (IOException e) {
             e.printStackTrace();
+            System.out.println();
             ex = e;
         } finally {
             if (inputStream != null) {

@@ -9,7 +9,7 @@ import java.io.*;
 
 public class SerializeDemo {
 
-    private static final String PERSON_FILE_NAME = "./person.bin2";
+    private static final String PERSON_FILE_NAME = "./person2.bin";
 
     public static void main(String[] args) throws Exception {
         Person person = new Person("Tom", 35, 1.75, true, "12345");

@@ -8,14 +8,14 @@ public class Main {
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(array1);
         int b;
         while ((b = byteArrayInputStream.read()) != -1) {
-            System.out.println(b);
+            System.out.print(b);
         }
-
+        System.out.println("\n_________");
         String text = "Hello, world";
         array1 = text.getBytes();
         ByteArrayInputStream byteArrayInputStream2 = new ByteArrayInputStream(array1);
         while ((b = byteArrayInputStream2.read()) != -1) {
-            System.out.println((char) b);
+            System.out.print((char) b);
         }
     }
 }
