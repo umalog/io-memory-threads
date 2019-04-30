@@ -15,11 +15,15 @@ public class UnsafeReadModifyWrite {
     public static void main(String[] args) throws InterruptedException {
         final UnsafeReadModifyWrite rmw = new UnsafeReadModifyWrite();
 
-        for (int i = 0; i < 1_000; i++) {
-            new Thread(() -> rmw.incrementNumber(), "Thread" + i).start();
+        for (int i = 0; i < 10; i++) {
+            new Thread(() -> {
+                    for (int f = 0; f < 10_000; f++) {
+                        rmw.incrementNumber();
+                    }
+                }, "Thread" + i).start();
         }
 
         Thread.sleep(6000);
-        System.out.println("Final number (should be 1_000): " + rmw.number);
+        System.out.println("Final number (should be 100_000): " + rmw.number);
     }
 }
